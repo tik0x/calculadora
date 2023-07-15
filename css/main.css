@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3ad7e;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: #000000;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    color: #000000;
+    grid-column: 1 / -1;
+    background-color: #ccc9c9;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: 'VT323', 'monospace';
+    font-weight: 600;
+}
+
+.btn {
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #090c31;
+}
+
+#numero {
+    background-color: #636363;
+}
+
+#operacion,
+#borrar,
+#c {
+    background-color: #e27832;
+}
+
+#cero {
+    background-color: #636363;
+    grid-column: span 2;
+}
+
+#punto {
+    background-color: #302f2f;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #e6394a;
+}
+
+#igual:hover {
+    background-color: #e65766;
+}
